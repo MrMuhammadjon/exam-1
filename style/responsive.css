@@ -100,4 +100,23 @@
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .Features-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        margin-top: 200px;
+        flex-direction: column;
+    }
+
+    .about-right img {
+        border-radius: 50px;
+        transform: scale(0.6);
+    }
+
+    .take-away-container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
