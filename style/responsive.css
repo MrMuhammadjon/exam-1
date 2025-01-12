@@ -44,7 +44,7 @@
         gap: 30px;
     }
 
-    .menu-header p{
+    .menu-header p {
         font-size: 14px;
     }
 
@@ -64,7 +64,10 @@
         width: 90%;
     }
 
-    
+    .email-input-con {
+        width: 80%;
+    }
+
 }
 
 @media(max-width: 768px) {
@@ -89,8 +92,8 @@
     }
 
     .animation-head-a {
-        width: 74%;
-        left: 110px;
+        width: 85%;
+        left: 50px;
     }
 
     .menu-main {
@@ -101,11 +104,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .Features-main{
+    .Features-main {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .about {
+        gap: 0;
         margin-top: 200px;
         flex-direction: column;
     }
@@ -115,8 +119,57 @@
         transform: scale(0.6);
     }
 
-    .take-away-container{
+    .take-away-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .telesmans-a h2 {
+        padding: 0 10px;
+    }
+
+    .telesmans-b h1 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .take-away-container {
+        padding: 100px 0 0 0;
+    }
+
+}
+
+@media(max-width: 576px) {
+
+    .animation-head-a {
+        width: 105%;
+        left: 0px;
+    }
+
+    .home-section-container {
+        width: 85%;
+    }
+
+    .about-left h2 {
+        font-size: 25px;
+    }
+
+    .about-left p {
+        font-size: 16px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 90%;
+    }
+
+    .eamil-main h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .about-right img {
+        border-radius: 50px;
+        transform: scale(0.5);
     }
 }

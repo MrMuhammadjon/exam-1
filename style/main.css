@@ -59,6 +59,7 @@ main {
 }
 
 .about {
+    width: 90%;
     margin-top: 100px;
     gap: 50px;
 }
