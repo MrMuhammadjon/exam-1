@@ -51,11 +51,25 @@ main {
 }
 
 .Features-main-child {
-    width: 80%;
+    width: 90%;
     height: 250px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    font-family: Roboto;
+    gap: 10px;
+}
+
+.bx-feature{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--section-color-1);
+}
+
+.Features-main-child h1{
+    font-family: Philosopher;
 }
 
 .about {
