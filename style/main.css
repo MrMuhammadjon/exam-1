@@ -1,0 +1,195 @@
+:root{
+    --text-color-1: #DC780B;
+    --text-color-2: #150C01;
+    --text-color-3: #fff;
+    --button-color-1: #DC780B;
+    --button-color-2: #150C01;
+    --section-color-1: #FBF1E7;  
+    --transition: 0.3s ease;
+    --border-1: 1px solid #DC780B;
+    --borde-2: 1px solid #ebebeb;
+}
+
+main {
+    align-items: center;
+}
+
+.Features {
+    width: 90%;
+    padding-top: 150px;
+}
+
+.Features-header {
+    width: 100%;
+    height: 150px;
+    gap: 20px;
+}
+
+
+.Features-header h1 {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color-1);
+}
+
+.Features-header p {
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Features-main {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Features-main-child {
+    width: 80%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about {
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.about-right img {
+    border-radius: 50px;
+}
+
+.about-left,
+.about-right {
+    width: 45%;
+    gap: 20px;
+}
+
+.about-left h1 {
+    color: var(--text-color-1);
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.about-left h2 {
+    color: var(--text-color-2);
+    font-size: 44px;
+    font-family: Philosopher;
+    font-weight: 400;
+}
+
+.about-left p {
+    color: var(--text-color-2);
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.menu {
+    margin-top: 100px;
+}
+
+.menu-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    gap: 20px;
+}
+
+.menu-header h1 {
+    color: var(--text-color-1);
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.menu-header h2 {
+    color: var(--text-color-2);
+    font-family: Philosopher;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.menu-header p {
+    color: var(--text-color-2);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.menu-main {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.menu-cards {
+    width: 360px;
+    height: 446px;
+    top: 2093px;
+    left: 150px;
+    gap: 0px;
+    border-radius: 75px 10px 10px 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    border: var(--borde-2);
+    transition: var(--transition);
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 5px;
+    }
+}
+
+.menu-cards img{
+    width: 100%;
+    border-radius: 75px 10px 75px 0;
+    transition: var(--transition);
+}
+
+.menu-cards:hover img{
+    border-radius: 5px;
+}
+
+.menu-cards-main,
+.menu-cards-footer{
+    padding: 20px;
+}
+
+.menu-cards-main{
+    gap: 20px;
+}
+
+.menu-cards-main-a h1{
+    font-family: Philosopher;
+}
+
+.menu-cards-main-b p{
+    color: rgb(56, 56, 56);
+}
+
+.menu-cards-footer-a .bx{
+    font-size: 40px;
+    color: var(--text-color-1);
+    cursor: pointer;
+}
+
+.menu-cards-footer-b .bx{
+    font-size: 25px;
+    color: var(--text-color-1);
+    transition: var(--transition);
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
