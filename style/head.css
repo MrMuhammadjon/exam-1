@@ -53,7 +53,9 @@ header {
     color: var(--text-color-1);
 }
 
-.header-container-chil-l-bg {
+
+.header-container-chil-l-bg,
+.about-lect-bg {
     width: 158px;
     height: 50px;
     border-radius: 5px;
@@ -63,21 +65,47 @@ header {
     position: relative;
     overflow: hidden;
     z-index: 10;
+    color: var(--text-color-3);
     &:hover{
         border: var(--border-1);
         color: var(--text-color-1);
+        transform: translateY(-5px);
     }
 }
 
-.header-container-chil-l-bg h1{
-   position: relative;
-   font-size: 16px;
-   color: var(--text-color-3);
-   z-index: 10;
+.header-container-chil-l-bg h1,
+.about-lect-bg h1{
+    position: relative;
+    z-index: 100;
+    font-size: 16px;
 }
 
+.header-container-chil-l-bg::before,
+.about-lect-bg::before{
+    content: "";
+    width: 100%;
+    height: 101%;
+    position: absolute;
+    background-color: var(--text-color-3);
+    border-radius: 0 50px 50px 0;
+    top: 0;
+    transform: translateX(-160%);
+    z-index: 1;
+    transition: var(--transition-2);
+}
 
-
+.header-container-chil-l-bg:hover::before,
+.about-lect-bg:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--text-color-3);
+    border-radius: 50px 0px 0px 50px;
+    top: 0;
+    transform: translateX(-40%);
+    z-index: 1;
+}
 
 .home-section {
     width: 100%;
@@ -149,8 +177,8 @@ header {
         color: var(--text-color-1);
     }
     &:nth-child(2):hover {
-        background-color: var(--button-color-1);
-        color: var(--text-color-1);
+        background-color: var(--text-color-3);
+        color: var(--text-color-3);
     }
     &:hover{
         transform: translateY(-5px);
@@ -163,8 +191,7 @@ header {
     z-index: 100;
 }
 
-.home-section-bg:nth-child(1)::before,
-.header-container-chil-l-bg::before{
+.home-section-bg:nth-child(1)::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -178,8 +205,7 @@ header {
     z-index: 0;
 }
 
-.home-section-bg:nth-child(1):hover::before,
-.header-container-chil-l-bg:hover::before {
+.home-section-bg:nth-child(1):hover::before {
     transform: translateX(10%);
     border-radius: 50px 0px 0px 50px;
     z-index: 10;
@@ -194,7 +220,7 @@ header {
     left: 0;
     border-radius: 0px 50px 50px 0px;
     transform: translateX(-100%);
-    background-color: var(--text-color-3);
+    background-color: var(--button-color-1);
     transition: var(--transition-2);
     z-index: 0;
 }

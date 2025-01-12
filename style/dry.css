@@ -33,14 +33,17 @@
     max-width: 1400px;
 }
 
-
-:root{
+:root {
     --text-color-1: #DC780B;
     --text-color-2: #150C01;
     --text-color-3: #fff;
     --button-color-1: #DC780B;
     --button-color-2: #150C01;
-    --section-color-1: #FBF1E7;  
+    --section-color-1: #FBF1E7;
     --transition: 0.3s ease;
+    --transition-1: 0.3s ease;
+    --transition-2: 0.6s ease;
     --border-1: 1px solid #DC780B;
+    --borde-2: 1px solid #ebebeb;
 }
+
