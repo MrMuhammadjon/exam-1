@@ -1,10 +1,10 @@
-:root{
+:root {
     --text-color-1: #DC780B;
     --text-color-2: #150C01;
     --text-color-3: #fff;
     --button-color-1: #DC780B;
     --button-color-2: #150C01;
-    --section-color-1: #FBF1E7;  
+    --section-color-1: #FBF1E7;
     --transition: 0.3s ease;
     --border-1: 1px solid #DC780B;
     --borde-2: 1px solid #ebebeb;
@@ -145,51 +145,144 @@ main {
     font-family: Roboto;
     border: var(--borde-2);
     transition: var(--transition);
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         border-radius: 5px;
     }
 }
 
-.menu-cards img{
+.menu-cards img {
     width: 100%;
     border-radius: 75px 10px 75px 0;
     transition: var(--transition);
 }
 
-.menu-cards:hover img{
+.menu-cards:hover img {
     border-radius: 5px;
 }
 
 .menu-cards-main,
-.menu-cards-footer{
+.menu-cards-footer {
     padding: 20px;
 }
 
-.menu-cards-main{
+.menu-cards-main {
     gap: 20px;
 }
 
-.menu-cards-main-a h1{
+.menu-cards-main-a h1 {
     font-family: Philosopher;
 }
 
-.menu-cards-main-b p{
+.menu-cards-main-b p {
     color: rgb(56, 56, 56);
 }
 
-.menu-cards-footer-a .bx{
+.menu-cards-footer-a .bx {
     font-size: 40px;
     color: var(--text-color-1);
     cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
-.menu-cards-footer-b .bx{
+.menu-cards-footer-b .bx {
     font-size: 25px;
     color: var(--text-color-1);
     transition: var(--transition);
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         transform: scale(1.5);
     }
+}
+
+.menu-footer {
+    width: 100%;
+    height: 170px;
+}
+
+.menu-footer-bg {
+    width: 150px;
+    height: 50px;
+    border: var(--border-1);
+    background: none;
+    color: var(--text-color-1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.take-away {
+    width: 100%;
+    height: 400px;
+    background-color: var(--section-color-1);
+}
+
+.take-away-container {
+    width: 90%;
+    height: auto;
+    padding: 200px 0 0 0;
+}
+
+.take-away-right {
+    flex: 1.5;
+    gap: 50px;
+}
+
+.take-away-right-a {
+    gap: 20px;
+}
+
+.take-away-right-b {
+    gap: 20px;
+}
+
+.take-away-right-b button{
+    width: 163px;
+    height: 48px;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+
+    &:nth-child(1){
+        background-color: var(--button-color-2);
+        color: var(--text-color-3);
+    }
+    &:nth-child(2){
+        border: var(--borde-2);
+    }
+}
+
+.take-away-right h1 {
+    font-size: 18px;
+    color: var(--text-color-1);
+    font-family: Roboto;
+}
+
+.take-away-right h2 {
+    font-size: 30px;
+    color: var(--text-color-2);
+    font-family: Philosopher;
+}
+
+.take-away-right p {
+    font-size: 16px;
+    color: var(--text-color-2);
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+
+.take-away-left {
+    flex: 1.5;
+
+}
+
+.take-away-left img {
+    height: 400px;
+    border-radius: 25px;
 }
