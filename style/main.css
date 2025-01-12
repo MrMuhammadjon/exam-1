@@ -286,3 +286,124 @@ main {
     height: 400px;
     border-radius: 25px;
 }
+
+.telismans{
+    width: 90%;
+    padding-bottom: 150px;
+    font-family: Roboto;
+    gap: 50px;
+    margin-top: 200px;
+}
+
+.telesmans-a,
+.telesmans-b,
+.telesmans-c{
+    text-align: center;
+    gap: 20px;
+}
+
+.telesmans-a p{
+    color: var(--text-color-1);
+    font-size: 20px;
+}
+
+.telesmans-a h1{
+    color: var(--text-color-2);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Philosopher;
+}
+
+.telesmans-a h2{
+    color: var(--text-color-2);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 100px;
+}
+
+.telesmans-b{
+    gap: 20px;
+    align-items: center;
+}
+
+.telesmans-b img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.telesmans-b h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.telesmans-b-starts .bx{
+    color: var(--button-color-1);
+    &:nth-child(6){
+        color: #ddd;
+    }
+}
+
+.telesmans-c h1{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.telesmans-c p{
+    color: gray;
+}
+
+.email{
+    width: 100%;
+    padding: 100px;
+    background-color: var(--section-color-1);
+}
+
+.email-container{
+    text-align: center;
+    gap: 10px;
+}
+
+.eamil-head h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color-1);
+    font-family: Roboto;
+}
+
+.eamil-main h1{
+    font-size: 40px;
+    color: var(--text-color-2);
+    font-family: Philosopher;
+}
+
+.eamil-footer{
+    height: 150px;
+}
+
+
+.email-input-con{
+    width: 65%;
+    height: 100px;
+    background-color: var(--text-color-3);
+    border-radius: 20px;
+}
+
+.email-input-con input{
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.email-input-con button{
+    width: 30%;
+    height: 100%;
+    background-color: var(--button-color-1);
+    color: var(--text-color-3);
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
