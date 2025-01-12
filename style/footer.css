@@ -1,0 +1,64 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 10px;
+    font-family: Roboto;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+  
+  .footer-logo .logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: Philosopher;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ddd;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
