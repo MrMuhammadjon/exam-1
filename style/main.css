@@ -95,10 +95,12 @@ main {
 
 .menu {
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-header {
-    width: 100%;
+    width: 90%;
     padding: 20px 0;
     text-align: center;
     gap: 20px;
