@@ -151,11 +151,15 @@ main {
     font-family: Roboto;
     border: var(--borde-2);
     transition: var(--transition);
+    box-shadow: 
+    -15px -15px 15px rgba(225, 225, 225, 0.2),  /* тень слева внизу */
+    15px 15px 15px rgba(0, 0, 0, 0.1);
 
     &:hover {
         transform: scale(1.1);
         border-radius: 5px;
-    }
+ /* тень сверху справа */
+    }   
 }
 
 .menu-cards img {
